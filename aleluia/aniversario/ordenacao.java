@@ -63,8 +63,29 @@ public class ordenacao {
             System.out.println(valores[i]);
         }
     }
+
+    public static void InsertSort(){
+       int i,j;
+       int [] valores = new int[]{94,27,32,46,8,0};
+       
+        if(valores.length>1){
+            for(i=1;i<valores.length;i++){
+                j=i;
+                while (valores[j]<valores[j-1] && j>0) {
+                    troca(valores, j, j-1);
+                    j--;
+                }
+            }
+        }
+        for(i=0; i<valores.length;i++){
+            System.out.println(valores[i]);
+        }
+
+
+
+    }
     public static void main(String[] args) {
-        ordenacao10();
+       InsertSort();
     }
 
 }
