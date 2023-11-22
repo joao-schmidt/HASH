@@ -63,6 +63,7 @@ public class ordenacao {
             System.out.println(valores[i]);
         }
     }
+    
 
     public static void InsertSort(){
        int i,j;
